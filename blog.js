@@ -1,9 +1,11 @@
 
+
+// script for blog buttor to change html page 
 document.getElementById('blog').addEventListener('click', function () {
     window.location.href = 'faq.html';
 })
 
-
+// script for   and histiory buton color 
 document.getElementById('btn-history').addEventListener('click', function () {
 
     document.getElementById('donation-form').classList.add('hidden');
@@ -16,6 +18,8 @@ document.getElementById('btn-history').addEventListener('click', function () {
 
 })
 
+
+// script for  donation and  buton color 
 document.getElementById('donation').addEventListener('click', function () {
     document.getElementById('donation').classList.remove('bg-gray-300');
     document.getElementById('donation').classList.add('bg-[#B4F461]');
@@ -38,7 +42,7 @@ document.getElementById('donate-now-for-noakhali').addEventListener('click', fun
     const donateNumber = parseFloat(donateAmount);
     const preBalanceNumber = parseFloat(preBalance);
 
-    if (typeof (donateNumber) === "number" && donateNumber > 0) {
+    if (typeof (donateNumber) === "number" && donateNumber<=moreNeedMoneyNumber && donateNumber > 0) {
         const newBalance = preBalanceNumber + donateNumber;
         const updateMoreNeedMoney = moreNeedMoneyNumber - donateNumber;
         document.getElementById('more-need').innerText = updateMoreNeedMoney;
@@ -70,6 +74,7 @@ document.getElementById('donate-now-for-noakhali').addEventListener('click', fun
 
     }
     else {
+        document.getElementById('my-modal').classList.add('hidden');
         alert('you are not elegable for donate')
     }
 
@@ -91,7 +96,7 @@ document.getElementById('donate-now-for-feni').addEventListener('click', functio
     const donateNumber = parseFloat(donateAmount);
     const preBalanceNumber = parseFloat(preBalance);
 
-    if (typeof (donateNumber) === "number" && donateNumber > 0) {
+    if (typeof (donateNumber) === "number" &&donateNumber<=moreNeedMoneyNumber&& donateNumber > 0) {
         const newBalance = preBalanceNumber + donateNumber;
         const updateMoreNeedMoney = moreNeedMoneyNumber - donateNumber;
         document.getElementById('more-need').innerText = updateMoreNeedMoney;
@@ -122,7 +127,8 @@ document.getElementById('donate-now-for-feni').addEventListener('click', functio
         document.getElementById('history-data').appendChild(newNotiDiv).append(newParagraph, notiTime);
     }
     else {
-        alert('you are not elegable for donate')
+        document.getElementById('my-modal').classList.add('hidden');
+        alert('you are not elegable for donate');
     }
 
 });
@@ -142,7 +148,7 @@ document.getElementById('donate-now-for-quota').addEventListener('click', functi
     const donateNumber = parseFloat(donateAmount);
     const preBalanceNumber = parseFloat(preBalance);
 
-    if (typeof (donateNumber) === "number" && donateNumber > 0) {
+    if (typeof (donateNumber) === "number" && donateNumber<=moreNeedMoneyNumber && donateNumber > 0) {
         const newBalance = preBalanceNumber + donateNumber;
         const updateMoreNeedMoney = moreNeedMoneyNumber - donateNumber;
         document.getElementById('more-need').innerText = updateMoreNeedMoney;
@@ -174,6 +180,7 @@ document.getElementById('donate-now-for-quota').addEventListener('click', functi
         document.getElementById('history-data').appendChild(newNotiDiv).append(newParagraph, notiTime);
     }
     else {
+        document.getElementById('my-modal').classList.add('hidden');
         alert('you are not elegable for donate')
     }
 
@@ -183,6 +190,11 @@ document.getElementById('donate-now-for-quota').addEventListener('click', functi
 
 
 
+ 
+    
+  
+
+ 
 
 
 
