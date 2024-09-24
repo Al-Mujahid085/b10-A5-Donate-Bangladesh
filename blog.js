@@ -110,7 +110,7 @@ document.getElementById('donate-now-for-feni').addEventListener('click', functio
         now = 'Date:' + " " + now;
 
 
-        const notification = donateNumber + " " + '6500 Taka is Donated for Flood Relief in Feni,Bangladesh';
+        const notification = donateNumber + " " + 'Taka is Donated for Flood Relief in Feni,Bangladesh';
         const newParagraph = document.createElement('p')
         const notiTime = document.createElement('p')
         notiTime.innerText = now;

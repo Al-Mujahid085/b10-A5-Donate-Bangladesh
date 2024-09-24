@@ -18,12 +18,6 @@ function hideModal(){
 
 
 // function for click anywhere on the modal for hide the modal from window 
-window.onclick = function(event){
-    if(document.getElementById('my-modal').classList.contains('hidden') === false && event.target === document.getElementById('my-modal')){
-    
-        document.getElementById('my-modal').classList.add('hidden');
-    }
-    
-}
+
 
 

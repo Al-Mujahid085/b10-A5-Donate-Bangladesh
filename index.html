@@ -25,7 +25,7 @@
 </head>
 
 <body class="lexend-font relative " id="body" >
-    <header class=" sticky top-0 z-20 ">
+    <header class=" sticky top-0 z-20 " onclick="hideModal()">
         <nav class="   w-full">
             <div class="max-w-full bg-amber-50 bg-blend-overlay  bg-opacity-80 backdrop-blur-lg  ">
                 <div class="flex justify-between max-w-[80%] items-center mx-auto py-6 ">
@@ -145,11 +145,14 @@
 
             
         </section>
-        <section class="w-full">
+
+
+        <!-- modal section  -->
+        <section class=" ">
             <!-- Open the modal using ID.showModal() method -->
             
-            <dialog id="my-modal" class="hidden bg-transparent px-16 py-6 rounded-lg backdrop-blur-2xl fixed top-48 z-30 justify-center items-center flex">
-                <div class=" flex flex-col items-center">
+            <dialog id="my-modal" onclick="hideModal()" class="flex bg-transparent  rounded-lg backdrop-brightness-50 fixed bottom-0 z-30 justify-center items-center  w-full h-[70%] hidden">
+                <div class=" flex flex-col items-center w-fit px-16 py-6 bg-gray-50 rounded-lg">
                     <h3 class="text-4xl font-bold text-black pb-4">Congrates!</h3>
                     <img src="./assets/coin.png" alt="">
                     <p class="text-xl">You have donated for humankind</p>
@@ -163,6 +166,9 @@
                 </div>
             </dialog>
         </section>
+
+
+        <!-- history div  -->
         <div class="donation-history hidden" id="history-data">
 
 
