@@ -26,12 +26,14 @@
 
 <body class="">
     <header class=" sticky top-0 z-20 ">
-        <nav class="   w-full">
+        <nav class="   w-full px-2">
             <div class="max-w-full bg-amber-50 bg-blend-overlay  bg-opacity-80 backdrop-blur-lg  ">
                 <div class="flex justify-between max-w-[80%] items-center mx-auto py-6 ">
                     <button class="btn bg-[#B4F461] px-8 text-xl text-black" id="home">Home</button>
-                    <h5 class="text-xl font-bold text-black flex items-center gap-3"><img src="./assets/logo.png"
+                    <div class="hidden lg:flex">
+                        <h5 class="text-xl font-bold text-black flex items-center gap-3"><img src="./assets/logo.png"
                             alt="">Donate Bangladesh</h5>
+                    </div>
                     <p class="flex items-center gap-2 text-gray-600 font-bold"><img src="./assets/coin.png"
                             alt=""><span>5500 </span> BDT</p>
                 </div>
@@ -40,9 +42,9 @@
         </nav>
 
     </header>
-    <main class="max-w-[80%] mx-auto">
+    <main class="lg:max-w-[80%]  mx-auto">
         <section class="faq">
-            <div>
+            <div class=" px-3">
                 <h1 class="text-4xl font-bold flex items-end my-10">Important FAQ <img src="./assets/faq_question_support_icon_153995.png" class="h-16" alt=""></h1>
             </div>
             <div class="join join-vertical w-full">

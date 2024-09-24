@@ -47,6 +47,7 @@ document.getElementById('donate-now-for-noakhali').addEventListener('click', fun
         const updateMoreNeedMoney = moreNeedMoneyNumber - donateNumber;
         document.getElementById('more-need').innerText = updateMoreNeedMoney;
         document.getElementById('pre-donated-for-noakhali').innerText = newBalance;
+        document.getElementById('donate-amount-for-noakhali').value = '';
 
 
         let now = new Date()
@@ -101,7 +102,7 @@ document.getElementById('donate-now-for-feni').addEventListener('click', functio
         const updateMoreNeedMoney = moreNeedMoneyNumber - donateNumber;
         document.getElementById('more-need').innerText = updateMoreNeedMoney;
         document.getElementById('pre-donated-for-feni').innerText = newBalance;
-
+        document.getElementById('donate-amount-for-feni').value = '';
 
         let now = new Date()
         let hours = now.getHours();
@@ -153,7 +154,7 @@ document.getElementById('donate-now-for-quota').addEventListener('click', functi
         const updateMoreNeedMoney = moreNeedMoneyNumber - donateNumber;
         document.getElementById('more-need').innerText = updateMoreNeedMoney;
         document.getElementById('pre-donated-for-quota').innerText = newBalance;
-
+        document.getElementById('donate-amount-for-quota').value = '';
 
 
         let now = new Date()

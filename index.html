@@ -25,13 +25,19 @@
 </head>
 
 <body class="lexend-font relative " id="body" >
-    <header class=" sticky top-0 z-20 " onclick="hideModal()">
+    <header class=" lg:sticky top-0 z-20 " onclick="hideModal()">
         <nav class="   w-full">
-            <div class="max-w-full bg-amber-50 bg-blend-overlay  bg-opacity-80 backdrop-blur-lg  ">
-                <div class="flex justify-between max-w-[80%] items-center mx-auto py-6 ">
+            <div class="max-w-full bg-amber-50 bg-blend-overlay  bg-opacity-80 backdrop-blur-lg  items-center ">
+                <div class="flex lg:hidden justify-center my-3 bg-orange-200 p-4">
+                    <h5 class="  text-xl font-bold text-black flex items-center gap-3"><img src="./assets/logo.png"
+                        alt="">Donate Bangladesh</h5>
+                </div>
+                <div class="flex justify-between w-[95%] lg:w-[80%] items-center mx-auto py-6 ">
                     <button class="btn bg-[#B4F461] px-8 text-xl text-black" id="blog">Blog</button>
-                    <h5 class="text-xl font-bold text-black flex items-center gap-3"><img src="./assets/logo.png"
+                    <div class="hidden lg:flex">
+                        <h5 class="  text-xl font-bold text-black flex items-center gap-3"><img src="./assets/logo.png"
                             alt="">Donate Bangladesh</h5>
+                    </div>
                     <p class="flex items-center gap-2 text-gray-600 font-bold"><img src="./assets/coin.png" alt=""><span
                             id="more-need">5500 </span> BDT</p>
                 </div>
@@ -46,7 +52,7 @@
         </nav>
 
     </header>
-    <main class="max-w-[80%] mx-auto">
+    <main class="lg:max-w-[80%] mx-auto">
 
 
         <!-- donation section  -->
@@ -149,17 +155,17 @@
 
         <!-- modal section  -->
         <section class=" ">
-            <!-- Open the modal using ID.showModal() method -->
             
-            <dialog id="my-modal" onclick="hideModal()" class="flex bg-transparent  rounded-lg backdrop-brightness-50 fixed bottom-0 z-30 justify-center items-center  w-full h-[70%] hidden">
-                <div class=" flex flex-col items-center w-fit px-16 py-6 bg-gray-50 rounded-lg">
+            
+            <dialog id="my-modal" onclick="hideModal()" class="flex bg-transparent  rounded-lg backdrop-brightness-50 fixed bottom-0 z-30 justify-center items-center w-[75%]  lg:w-full h-[70%] hidden">
+                <div class=" flex flex-col items-center w-full lg:w-fit px-2 text-center lg:px-16 py-6 bg-gray-50 rounded-lg">
                     <h3 class="text-4xl font-bold text-black pb-4">Congrates!</h3>
                     <img src="./assets/coin.png" alt="">
                     <p class="text-xl">You have donated for humankind</p>
                     <p class="text-2xl font-bold text-gray-700">Successfully</p>
                     <div class="modal-action">
                         <form method="dialog">
-                            <!-- if there is a button in form, it will close the modal -->
+                            
                             <button class="btn text-lg font-bold " id="btn-modal-hide" onclick="hideModal()">Close confirmation</button>
                         </form>
                     </div>
